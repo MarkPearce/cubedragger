@@ -12,9 +12,12 @@ window.onload = function () {
     var scene;
     var camera;
     var renderer;
+    var containerDiv = document.getElementById('container');
 
-    var WIDTH  = window.innerWidth;
-    var HEIGHT = window.innerHeight;
+   // var WIDTH  = window.innerWidth;
+  //  var HEIGHT = window.innerHeight;
+    var WIDTH  = 960;
+    var HEIGHT = 400;
 
     function initThreeD() {
         scene = new THREE.Scene();
@@ -24,7 +27,12 @@ window.onload = function () {
         initLight();
         initCamera();
         initRenderer();
-        document.body.appendChild(renderer.domElement);
+       // document.body.appendChild(renderer.domElement);
+        containerDiv.style.position = "absolute";
+        containerDiv.style.left = "0px";
+        containerDiv.style.top = "0px";
+        document.body.appendChild(containerDiv);
+        containerDiv.appendChild(renderer.domElement);
     }
 
     function initCube() {
@@ -87,9 +95,7 @@ window.onload = function () {
     function render() {
         requestAnimationFrame(render);
         renderer.render(scene, camera);
-        //rotateCube();
         cube.rotation.y = THREE.Math.degToRad(cubeRotation);
-        //console.log(cubeRotation);
     }
 
     initThreeD();
@@ -120,26 +126,28 @@ window.onload = function () {
     }
 
     function startDrag(){
-        initialRotation = dialContainer._gsTransform.rotation;
+        // initialRotation = dialContainer._gsTransform.rotation;
+        initialRotation = cubeRotation;
+
     }
 
     function updateRotation(){
         posX = sliderDragger._gsTransform.x;
         cubeRotation = initialRotation + posX;
-        TweenMax.set(dialContainer, {
+/*        TweenMax.set(dialContainer, {
             rotation: cubeRotation
-        });
+        });*/
     }
 
     function getDOM(){
         body = document.body;
         container = document.getElementById('container');
-        dialContainer = document.getElementById('dialContainer');
+        // dialContainer = document.getElementById('dialContainer');
         sliderDragger = document.getElementById('sliderDragger');
 
-        TweenMax.set(dialContainer, {
-            y:120
-        });
+        // TweenMax.set(dialContainer, {
+        //     y:120
+        // });
     }
 
     initDragger();
