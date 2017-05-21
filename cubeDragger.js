@@ -27,7 +27,7 @@ window.onload = function () {
         initLight();
         initCamera();
         initRenderer();
-       // document.body.appendChild(renderer.domElement);
+
         containerDiv.style.position = "absolute";
         containerDiv.style.left = "0px";
         containerDiv.style.top = "0px";
@@ -126,7 +126,6 @@ window.onload = function () {
     }
 
     function startDrag(){
-        // initialRotation = dialContainer._gsTransform.rotation;
         initialRotation = cubeRotation;
 
     }
@@ -134,20 +133,12 @@ window.onload = function () {
     function updateRotation(){
         posX = sliderDragger._gsTransform.x;
         cubeRotation = initialRotation + posX;
-/*        TweenMax.set(dialContainer, {
-            rotation: cubeRotation
-        });*/
     }
 
     function getDOM(){
         body = document.body;
         container = document.getElementById('container');
-        // dialContainer = document.getElementById('dialContainer');
         sliderDragger = document.getElementById('sliderDragger');
-
-        // TweenMax.set(dialContainer, {
-        //     y:120
-        // });
     }
 
     initDragger();

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fab6549c-9236-4561-a631-175253e955bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cubeDragger.css" afterPath="$PROJECT_DIR$/cubeDragger.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cubeDragger.html" afterPath="$PROJECT_DIR$/cubeDragger.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cubeDragger.js" afterPath="$PROJECT_DIR$/cubeDragger.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,21 +23,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="cubeDragger.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="cubeDragger.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cubeDragger.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="13" />
+                <state relative-caret-position="442">
+                  <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cubeDragger.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="cubeDragger.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cubeDragger.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="745">
-                  <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+                <state relative-caret-position="340">
+                  <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -51,8 +50,8 @@
           <file leaf-file-name="cubeDragger.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cubeDragger.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="822">
-                  <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="149" selection-end-column="14" />
+                <state relative-caret-position="476">
+                  <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -270,12 +269,12 @@
       <workItem from="1495286905684" duration="18973000" />
       <workItem from="1495320355626" duration="78000" />
       <workItem from="1495321988819" duration="6819000" />
-      <workItem from="1495359787258" duration="2925000" />
+      <workItem from="1495359787258" duration="3057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46594000" />
+    <option name="totallyTimeSpent" value="46726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -517,26 +516,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cubeDragger.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cubeDragger.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="442">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cubeDragger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="149" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cubeDragger.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        <state relative-caret-position="476">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding />
         </state>
       </provider>
