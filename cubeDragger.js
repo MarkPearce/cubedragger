@@ -14,10 +14,8 @@ window.onload = function () {
     var renderer;
     var containerDiv = document.getElementById('container');
 
-   // var WIDTH  = window.innerWidth;
-  //  var HEIGHT = window.innerHeight;
-    var WIDTH  = 960;
-    var HEIGHT = 400;
+   var WIDTH  = window.innerWidth;
+   var HEIGHT = window.innerHeight;
 
     function initThreeD() {
         scene = new THREE.Scene();
@@ -31,6 +29,8 @@ window.onload = function () {
         containerDiv.style.position = "absolute";
         containerDiv.style.left = "0px";
         containerDiv.style.top = "0px";
+        containerDiv.style.width = WIDTH.toString() +"px"
+        containerDiv.style.height = HEIGHT.toString() +"px"
         document.body.appendChild(containerDiv);
         containerDiv.appendChild(renderer.domElement);
     }
@@ -137,8 +137,11 @@ window.onload = function () {
 
     function getDOM(){
         body = document.body;
-        container = document.getElementById('container');
         sliderDragger = document.getElementById('sliderDragger');
+        sliderDragger.style.left = "0px";
+        sliderDragger.style.top = "0px";
+        sliderDragger.style.width = WIDTH.toString() +"px"
+        sliderDragger.style.height = HEIGHT.toString() +"px"
     }
 
     initDragger();
