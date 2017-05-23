@@ -8,6 +8,12 @@
 
 window.onload = function () {
 
+    //disable scrolling
+    document.body.addEventListener("touchmove", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }, false);
+
     var cubeRotation;
     var scene;
     var camera;
