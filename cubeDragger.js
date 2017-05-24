@@ -139,6 +139,7 @@ window.onload = function () {
     function updateRotation(){
         posX = sliderDragger._gsTransform.x;
         cubeRotation = initialRotation + posX;
+        socket.emit('updateMasterRotation',cubeRotation);
     }
 
     function getDOM(){
@@ -151,4 +152,17 @@ window.onload = function () {
     }
 
     initDragger();
+    var targetRotation=0
+    /////////////////Socket IO
+    var socket = io('http://localhost:3000');
+    socket.on('cubeConnect',function(data){
+        //console.log(data)
+        //console.log('socket created');
+        cubeRotation = data;
+    });
+
+    socket.on('cubeUpdate',function(data){
+       // console.log(data)
+        cubeRotation = data;
+    });
 };
