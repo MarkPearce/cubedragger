@@ -152,9 +152,9 @@ window.onload = function () {
     }
 
     initDragger();
-    var targetRotation=0
-    /////////////////Socket IO
-    var socket = io('http://localhost:3000');
+
+    /////////////////  Socket IO ///////////////////////
+    var socket = io('http://107.180.107.193:3000');
     socket.on('cubeConnect',function(data){
         //console.log(data)
         //console.log('socket created');
